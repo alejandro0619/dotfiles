@@ -36,8 +36,8 @@ super + {w,m,x,r,s,i}
 ##---------- Applications ----------##
 
 # Launch Apps
-super + shift + {f,w,e}
-	{pcmanfm,firefox,geany}
+super + shift + {f,w,e,c}
+	{pcmanfm,firefox,geany,code}
 
 # Terminal Apps
 ctrl + alt + {v,n,r,h,b}
