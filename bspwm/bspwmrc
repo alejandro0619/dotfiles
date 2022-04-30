@@ -67,7 +67,7 @@ for i in ${files[@]}; do
    bspc rule -a $i desktop='^3' follow=on focus=on; done
 
 # 4 > code
-declare -a code=(Geany code-oss)
+declare -a code=(Geany code)
 for i in ${code[@]}; do
    bspc rule -a $i desktop='^4' follow=on focus=on; done
 
@@ -143,7 +143,7 @@ xsetroot -cursor_name left_ptr
 bash $HOME/.fehbg
 
 # Start mpd
-exec mpd &
+# exec mpd &
 
 # Start bspwm scripts
 bspcolors
