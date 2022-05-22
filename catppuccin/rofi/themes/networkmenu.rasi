@@ -1,0 +1,123 @@
+
+configuration {
+    show-icons:                     false;
+    display-drun: 					"Search:";
+    drun-display-format:            "{Icon} {name}";
+    disable-history:                false;
+	sidebar-mode: 					false;
+
+}
+
+
+window {
+    transparency:                   "real";
+    background-color:               #1E1D2F;
+    text-color:                     #D9E0EE;
+    border:		 	                0px;
+    border-color:                   #F28FAD;
+    border-radius:                  0px;
+    width:                          400px;
+    heigh:                          200px;
+    location:                       center;
+}
+
+prompt {
+    enabled: 						true;
+	padding: 						4px 4px 6px 6px;
+	background-color: 				#1E1D2F;
+	text-color: 					#D9E0EE;
+}
+
+textbox-prompt-colon {
+	expand: 						false;
+	str: 							"";
+    background-color:               #1E1D2F;
+    text-color:                     #D9E0EE;
+    padding:                        4px 0px 0px 8px;
+	font:							"feather 12";
+}
+
+inputbar {
+	children: 						[ textbox-prompt-colon, prompt, entry ];
+    background-color:               #1E1D2F;
+    text-color:                     #D9E0EE;
+    expand:                         false;
+    border:                  		0px;
+    border-radius:                  0px;
+    border-color:                  	#1E1D2F;
+    margin:                         0px 0px 0px 0px;
+    padding:                        4px 0px 0px 0px;
+    position:                       center;
+}
+
+
+entry {
+    background-color:               #1E1D2F;
+    text-color:                     #D9E0EE;
+    placeholder-color:              #1E1D2F;
+    expand:                         true;
+    horizontal-align:               0;
+    placeholder:                    "";
+    blink:                          true;
+    padding:                        4px 0px 0px 0px;
+}
+
+case-indicator {
+    background-color:               #1E1D2F;
+    text-color:                     #D9E0EE;
+    spacing:                        0;
+}
+
+
+listview {
+    background-color:               #1E1D2F;
+    columns:                        1;
+    lines:							7;
+    spacing:                        4px;
+    cycle:                          true;
+    dynamic:                        true;
+    layout:                         vertical;
+}
+
+mainbox {
+    background-color:               #1E1D2F;
+    children:                       [ inputbar, listview ];
+    spacing:                       	6px;
+    padding:                        6px 6px 6px 6px;
+}
+
+element {
+    background-color:               #1E1D2F;
+    text-color:                     #D9E0EE;
+    orientation:                    horizontal;
+    border-radius:                  0px;
+    padding:                        6px 6px 6px 6px;
+}
+
+element-icon {
+    background-color: 				inherit;
+    text-color:       				inherit;
+    horizontal-align:               0.5;
+    vertical-align:                 0.5;
+    size:                           24px;
+    border:                         0px;
+}
+
+element-text {
+    background-color: 				inherit;
+    text-color:       				inherit;
+    expand:                         true;
+    horizontal-align:               0;
+    vertical-align:                 0;
+    margin:                         2px 0px 2px 2px;
+}
+
+
+element selected {
+    background-color:               #1E1D2F;
+    text-color:                     #F28FAD;
+    border:                  		0px;
+    border-radius:                  0px;
+    border-color:                  	#1E1D2F;
+}
+
