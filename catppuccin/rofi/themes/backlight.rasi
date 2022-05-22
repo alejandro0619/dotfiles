@@ -1,0 +1,100 @@
+/*
+    Author: Spaghetti
+    Inspired by Aditya
+ */
+ 
+configuration {
+    show-icons:                     false;
+	font:                      		"Comfortaa 14";
+    disable-history:                false;
+	sidebar-mode: 					false;
+}
+
+@import "catppuccin"
+
+* {
+    background-color:               @bg-col;
+    text-color:                     @fg-col;
+}
+
+window {
+    transparency:                   "real";
+    border-radius:                  0px;
+    location:                       center;
+    width:                       	500px;
+    x-offset:                       0px;
+    y-offset:                       0px;
+}
+
+prompt {
+    enabled: 						true;
+    padding:                        10px;
+	background-color: 				@bg-col-light;
+	text-color: 					@blue;
+    border:                  		2px 2px 2px 2px;
+    border-radius:                  0px;
+    border-color:                  	@blue;
+}
+
+textbox-prompt-colon {
+	expand: 						false;
+	str: 							" Brightness ";
+	background-color: 				@blue;
+	text-color: 					@bg-col;
+    padding:                        12px 10px 0px 10px;
+}
+
+inputbar {
+	children: 						[ textbox-prompt-colon, prompt ];
+    spacing:                        0px;
+    background-color:               @bg-col;
+    text-color:                     @fg-col;
+    expand:                         false;
+    border:                  		0px;
+    border-radius:                  0px;
+    border-color:                  	@blue;
+    margin:                         0px 0px 0px 0px;
+    padding:                        0px;
+    position:                       center;
+}
+
+listview {
+    columns:						3;
+    lines:							1;
+    spacing:                        15px;
+    cycle:                          true;
+    dynamic:                        true;
+    layout:                         vertical;
+}
+
+mainbox {
+    background-color:               @bg-col;
+    children:                       [ inputbar, listview ];
+    spacing:                        15px;
+    margin:                         40px;
+}
+
+element {
+    background-color:               @bg-col-light;
+    text-color:                     @fg-col;
+    orientation:                    vertical;
+    border-radius:                  0px;
+}
+
+element-text {
+    background-color: 				inherit;
+    text-color:       				inherit;
+	font:							"feather 32";
+    expand:                         true;
+    horizontal-align:               0.5;
+    vertical-align:                 0.5;
+    margin:                         40px 0px 40px 0px;
+}
+
+element selected {
+    background-color:               @blue;
+    text-color:                     @bg-col;
+    border:                  		0px;
+    border-radius:                  0px;
+    border-color:                  	@fg-col;
+}
