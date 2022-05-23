@@ -6,4 +6,4 @@ Even the most newbie linux user got this, so why not?
 
 ----
 
-[Screenshot](./misc/screenshot.png)
+![Screenshot](./screenshot.png)
