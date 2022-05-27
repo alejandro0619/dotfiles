@@ -12,4 +12,4 @@ Even the most newbie linux user got this, so why not?
 
 ----
 
-![Screenshot](./screenshot2.png)
+![Screenshot](./screenshot2.jpg)
