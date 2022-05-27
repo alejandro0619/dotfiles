@@ -7,4 +7,9 @@ Even the most newbie linux user got this, so why not?
 ----
 
 ## Catppuccin rice
+
 ![Screenshot](./screenshot.png)
+
+----
+
+![Screenshot](./screenshot2.png)
