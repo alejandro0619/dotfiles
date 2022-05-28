@@ -1,4 +1,4 @@
-
+@theme "catppuccin"
 
 configuration {
     show-icons:                     false;
@@ -9,8 +9,8 @@ configuration {
 
 
 * {
-    background-color:               #1E1D2F;
-    text-color:                     #D9E0EE;
+    background-color:               @bg-col;
+    text-color:                     @fg-col;
 }
 
 window {
@@ -25,30 +25,30 @@ window {
 prompt {
     enabled: 						true;
     padding:                        10px;
-	background-color: 				#1E1D2F;
-	text-color: 					#D9E0EE;
+	background-color: 				@bg-col;
+	text-color: 					@fg-col;
     border:                  		2px 2px 4px 2px;
     border-radius:                  0px;
-    border-color:                  	#D9E0EE;
+    border-color:                  	@fg-col;
 }
 
 textbox-prompt-colon {
 	expand: 						false;
 	str: 							" Network ";
-	background-color: 				#1E1D2F;
-	text-color: 					#D9E0EE;
+	background-color: 				@bg-col;
+	text-color: 					@fg-col;
     padding:                        12px 10px 0px 10px;
 }
 
 inputbar {
 	children: 						[ textbox-prompt-colon, prompt ];
     spacing:                        0px;
-    background-color:               #1E1D2F;
-    text-color:                     #D9E0EE;
+    background-color:               @bg-col;
+    text-color:                     @fg-col;
     expand:                         false;
     border:                  		0px;
     border-radius:                  0px;
-    border-color:                  	#D9E0EE;
+    border-color:                  	@fg-col;
     margin:                         0px 0px 0px 0px;
     padding:                        0px;
     position:                       center;
@@ -64,17 +64,17 @@ listview {
 }
 
 mainbox {
-    background-color:               #1E1D2F;
+    background-color:               @bg-col;
     children:                       [ inputbar, listview ];
     spacing:                        15px;
     margin:                         40px;
 }
 
 element {
-    background-color:               #1E1D2F;
-    text-color:                     #D9E0EE;
+    background-color:               @bg-col;
+    text-color:                     @fg-col;
     orientation:                    vertical;
-    border-radius:                  0px;
+    border-radius:                  10px;
 }
 
 element-text {
@@ -88,9 +88,9 @@ element-text {
 }
 
 element selected {
-    background-color:               #D9E0EE;
-    text-color:                     #1E1D2F;
+    background-color:               @fg-col2;
+    text-color:                     @bg-col;
     border:                  		0px;
-    border-radius:                  0px;
-    border-color:                  	#D9E0EE;
+    border-radius:                  10px;
+    border-color:                  	@fg-col;
 }

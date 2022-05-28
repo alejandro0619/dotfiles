@@ -1,24 +1,24 @@
-
+@theme "catppuccin"
 
 * {
-    background-color:       #1E1D2F;
-    text-color:             #D9E0EE;
+    background-color:       @bg-col;
+    text-color:             @fg-col;
 	font:				 	"Iosevka 10";
 }
 
 window {
     width:      			200px;
     padding:    			20px;
-    /*border:					0px 0px 2px 0px;*/
     border-radius:          0px;
-    border-color:           #F28FAD;
+    border-color:           @fg-col2;
     location:               center;
     x-offset:               0;
     y-offset:               -4%;
 }
 
-entry {`
+entry {
     expand: 				true;
     width: 					150px;
-    text-color:				#D9E0EE;
+    text-color:				@fg-col;
 }
+
