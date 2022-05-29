@@ -5,6 +5,9 @@
 	github account: https://github.com/alejandro0619
 */
 
+
+@theme "catppuccin"
+
 configuration {
     show-icons:                     false;
     font:                           "Comfortaa 14";
@@ -13,8 +16,8 @@ configuration {
 }
 
 * {
-    background-color:              #1E1D2F;
-    text-color:                    #1E1D2F;
+    background-color:              @bg-col;
+    text-color:                    @bg-col;
 }
 
 window {
@@ -27,40 +30,40 @@ window {
 }
 
 prompt {
-    enabled: 			    true;
+    enabled: 			            true;
     padding:                        10px;
-    background-color: 		    #1E1D2F;
-    text-color: 		    #1E1D2F;
+    background-color: 		        @bg-col;
+    text-color: 		            @bg-col;
     border:                  	    2px 2px 4px 2px;
     border-radius:                  10px;
-    border-color:                   #1E1D2F;
+    border-color:                   @bg-col;
 }
 
 textbox-prompt-colon {
-	expand: 		    false;
-	str: 			    " System ";
-	background-color: 	    #1E1D2F;
-	text-color: 		    #FFFFFF;
-        padding:                    12px 10px 0px 10px;
+	expand: 		                false;
+	str: 			                " System ";
+	background-color: 	            @bg-col;
+	text-color: 		            @fg-col;
+    padding:                        12px 10px 0px 10px;
 }
 
 inputbar {
 	children: 		  [ textbox-prompt-colon, prompt ];
     spacing:                        0px;
-    background-color:               #1E1D2F;
-    text-color:                     #D9E0EE;
+    background-color:               @bg-col;
+    text-color:                     @fg-col;
     expand:                         false;
     border:                  	    0px;
     border-radius:                  0px;
-    border-color:                   #1E1D2F;
+    border-color:                   @bg-col;
     margin:                         0px 0px 0px 0px;
     padding:                        0px;
     position:                       center;
 }
 
 listview {
-    columns:			    5;
-    lines:			    1;
+    columns:			            5;
+    lines:			                1;
     spacing:                        15px;
     cycle:                          true;
     dynamic:                        true;
@@ -68,23 +71,23 @@ listview {
 }
 
 mainbox {
-    background-color:               #1E1D2F;
+    background-color:               @bg-col;
     children:                       [ inputbar, listview ];
     spacing:                        15px;
     margin:                         40px;
 }
 
 element {
-    background-color:               #F28FAD;
-    text-color:                     #1E1D2F;
+    background-color:               @fg-col2;
+    text-color:                     @bg-col;
     orientation:                    vertical;
     border-radius:                  20px;
 }
 
 element-text {
-    background-color: 		   inherit;
-    text-color:       		   inherit;
-    font:			   "feather 32";
+    background-color: 		        inherit;
+    text-color:       		        inherit;
+    font:			                "feather 32";
     expand:                         true;
     horizontal-align:               0.5;
     vertical-align:                 0.5;
@@ -92,10 +95,10 @@ element-text {
 }
 
 element selected {
-    background-color:               #1E1D2F;
-    text-color:                     #7aa2f7;
+    background-color:               @bg-col;
+    text-color:                     @blue;
     border:                  	    0px;
     border-radius:                  10px;
-    border-color:                   #F28FAD;
+    border-color:                   @fg-col2;
 }
 
